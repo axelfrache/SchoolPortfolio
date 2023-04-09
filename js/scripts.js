@@ -13,8 +13,16 @@ function changeImage(direction) {
     currentIndex = newIndex;
     carouselImages[currentIndex].style.display = "block";
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const welcomeBanner = document.querySelector("#welcome-banner");
+    const trail = document.querySelector("#trail");
 
-
-window.addEventListener("DOMContentLoaded", () => {
-    carouselImages[currentIndex].style.display = "block";
+    if (trail) {
+        welcomeBanner.addEventListener("mousemove", (event) => {
+            const x = event.clientX;
+            const y = event.clientY;
+            trail.style.transform = `translate(${x - 10}px, ${y - 10}px)`;
+        });
+    }
 });
+
