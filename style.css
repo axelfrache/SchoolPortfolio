@@ -219,3 +219,18 @@ button:hover {
     border-radius: 4px;
     margin-top: 10px;
 }
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+    color: var(--background);
+
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+}
