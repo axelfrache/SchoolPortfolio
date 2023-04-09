@@ -28,10 +28,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 /* Navigation */
 nav {
     background-color: var(--background);
@@ -96,7 +92,7 @@ input, textarea {
     padding: 5px;
 }
 
-button {
+.form button {
     background-color: var(--primary-color);
     color: var(--background);
     border: none;
@@ -105,7 +101,7 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.form button:hover {
     background-color: #0056b3;
 }
 
@@ -154,6 +150,7 @@ button:hover {
     right: 0;
     padding: 40px 0;
     background-color: var(--primary-color);
+    border-radius: 20px;
 }
 
 #welcome-banner h1 {
@@ -190,7 +187,6 @@ button:hover {
     position: relative;
 
 }
-
 
 .project-card img {
     max-width: 100%;
@@ -233,4 +229,39 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     font-size: 14px;
+}
+
+.screen img{
+    max-width: 25%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.btn-voir-plus {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.btn-voir-plus:hover {
+    background-color: #0056b3;
+}
+
+.center {
+    text-align: center;
+}
+
+.screenAvenue img{
+    margin: 15px;
+    max-width: 25%;
+    height: auto;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
 }
