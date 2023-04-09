@@ -1,0 +1,204 @@
+/* Variables de couleurs */
+:root {
+    --primary-color: #1a73e8; /* Bleu Google */
+    --secondary-color: #fbbc05; /* Jaune Google */
+    --success-color: #34a853; /* Vert Google */
+    --danger-color: #ea4335; /* Rouge Google */
+    --background: #ffffff; /* Blanc */
+    --text-color: #333;
+}
+
+/* Styles généraux */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--background);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Sections */
+section {
+    margin: 40px 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+/* Projets */
+#projets img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    border: 1px solid var(--text-color);
+    padding: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--background);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Frise chronologique */
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 4px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    padding-left: 60px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    font-weight: bold;
+    color: var(--danger-color);
+    text-align: right;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/* Bannière de bienvenue */
+#welcome-banner {
+    color: var(--background);
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+    background-color: var(--primary-color);
+}
+
+#welcome-banner h1 {
+    margin-bottom: 20px;
+}
+
+#welcome-banner p {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: var(--background);
+}
+
+/* Projets */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card {
+    width: calc(33% - 20px);
+    background-color: var(--background);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.project-card span {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: var(--primary-color);
+    color: var(--background);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--text-color);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

@@ -1,1 +1,99 @@
-Hello World !
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel Frache - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#formations">Formations</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/axel-frache/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AxelFrache" target="_blank">Github</a>
+    </nav>
+    <section id="welcome-banner">
+        <h1>Bienvenue sur mon site portfolio</h1>
+        <p>
+            Je m'appelle Axel Frache, passionné d'informatique depuis mon plus jeune âge, <br>
+            j'ai décidé de faire de ma passion mon métier en poursuivant des études en informatique.<br>
+            Ce site est un aperçu de mon parcours et des compétences que j'ai acquises au fil des années.<br>
+            N'hésitez pas à me contacter pour discuter de projets ou d'opportunités professionnelles.
+        </p>
+    </section>
+</header>
+<main>
+    <!-- Projets -->
+    <section id="projets">
+        <h2>Projets</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <span>2023</span>
+                <h3>e-Vote</h3>
+                <img src="path/to/image-e-vote.jpg" alt="e-Vote">
+                <p>Description : Une application de vote en ligne sécurisée utilisant des méthodes cryptographiques pour garantir l'intégrité et la confidentialité du vote.</p>
+            </div>
+            <div class="project-card">
+                <span>2022</span>
+                <h3>Vinyl Avenue</h3>
+                <img src="Ressources/img/img.png" alt="Vinyl Avenue">
+                <p>Un site internet de e-commerce dédié à la vente de vinyles et de matériel audio.</p>
+            </div>
+            <div class="project-card">
+                <span>2022</span>
+                <h3>Nuit de l'info</h3>
+                <img src="path/to/image-nuit-info.jpg" alt="Nuit de l'info">
+                <p>Description : Seconde place au défi "Mets du Green dans ton IT" proposé par ARHS Group</p>
+            </div>
+            <div class="project-card">
+                <span>2022</span>
+                <h3>Forum IUT-Entreprises</h3>
+                <img src="path/to/image-forum-iut.jpg" alt="Forum IUT-Entreprises">
+                <p>Description : Étudiant ambassadeur lors de l'événement</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Formations -->
+    <section id="formations">
+        <h2>Formations et expériences</h2>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <span>2021 - 2024</span>
+                <h3>BUT Informatique</h3>
+                <ul>Lieu : IUT de Montpellier-Sète</ul>
+            </li>
+            <li class="timeline-item">
+                <span >2020 - 2021</span>
+                <h3>Baccalauréat Mention Très Bien</h3>
+                <ul>Lieu : Lycée Dhuoda (Nîmes)</ul>
+            </li>
+            <li class="timeline-item">
+                <span>2017</span>
+                <h3>Stage chez Agysoft</h3>
+            </li>
+        </ul>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:axelfrache@gmail.com" method="post" enctype="text/plain">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <!-- Vous pouvez ajouter des informations de contact ou des liens vers les réseaux sociaux ici, si nécessaire -->
+</footer>
+</body>
+</html>
+
