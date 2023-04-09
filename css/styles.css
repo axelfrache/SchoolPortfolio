@@ -265,3 +265,53 @@ footer {
     border: 1px solid var(--text-color);
     border-radius: 5px;
 }
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    display: none;
+    max-width: 20%; /* Modifiez cette valeur selon vos préférences */
+    max-height: 20%; /* Modifiez cette valeur selon vos préférences */
+    height: auto;
+}
+
+
+.carousel-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #000;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+}
