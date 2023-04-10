@@ -92,16 +92,19 @@
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <form action="mailto:axelfrache@gmail.com" method="post" enctype="text/plain">
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <div class="form">
-                <button type="submit">Envoyer</button>
-            </div>
+        <form action="sendMail.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" name="subject" id="subject"><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Send" id="sendBtn">
         </form>
     </section>
+
 </main>
 <footer>
     <div class="footer-content">

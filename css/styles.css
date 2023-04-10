@@ -76,14 +76,9 @@ li {
     margin-bottom: 10px;
 }
 
-/* Contact */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
+/* Arrondir les bords des éléments de formulaire */
+#contact .form-control {
+    border-radius: 10px;
 }
 
 input, textarea {
@@ -272,6 +267,7 @@ footer {
     transition: 0.3s;
     margin: 20px auto 0;
     text-align: center;
+    border : none;
 }
 
 .btn-voir-plus:hover {
@@ -340,3 +336,18 @@ footer {
     opacity: 1;
 }
 
+/* Modifier la largeur du bouton "Envoyer" */
+#contact #sendBtn{
+    background-color: var(--primary-color);
+    color: var(--background);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 20px auto 0;
+}
+
+#contact #sendBtn:hover{
+    background-color: #0056b3;
+    cursor : pointer;
+}
