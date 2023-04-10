@@ -251,6 +251,7 @@ footer {
 }
 
 .screen img{
+    cursor: pointer;
     max-width: 25%;
     height: auto;
     margin-bottom: 10px;
@@ -284,6 +285,7 @@ footer {
     height: auto;
     border: 1px solid var(--text-color);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .carousel {
@@ -351,3 +353,79 @@ footer {
     background-color: #0056b3;
     cursor : pointer;
 }
+
+.social-icons {
+
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 1rem;
+}
+
+.social-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-button:last-child {
+    margin-right: 0;
+}
+
+.social-button:hover {
+    background-color: #e0e0e0;
+}
+
+.social-icon {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+.lightbox-open main,
+.lightbox-open header,
+.lightbox-open footer {
+    filter: blur(5px);
+}
+

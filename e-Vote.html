@@ -8,6 +8,10 @@
     <script defer src="js/scripts.js"></script>
 </head>
 <body>
+<div class="lightbox" id="lightbox">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Agrandissement de l'image">
+    <span class="close-lightbox" id="closeLightbox">&times;</span>
+</div>
 <header>
     <nav>
         <a href="index.html">Retour au Portfolio</a>
@@ -45,5 +49,30 @@
         &copy; <?php echo date("Y"); ?> Axel Frache. All rights reserved.
     </div>
 </footer>
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    document.querySelectorAll('.screen img').forEach(img => {
+        img.addEventListener('click', function () {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = this.src;
+            document.body.classList.add('lightbox-open');
+        });
+    });
+
+    closeLightbox.addEventListener('click', function () {
+        lightbox.style.display = 'none';
+        document.body.classList.remove('lightbox-open');
+    });
+
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+            document.body.classList.remove('lightbox-open');
+        }
+    });
+</script>
 </body>
 </html>
