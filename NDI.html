@@ -45,5 +45,31 @@
         &copy; <?php echo date("Y"); ?> Axel Frache. All rights reserved.
     </div>
 </footer>
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    document.querySelectorAll('.screenAvenue img').forEach(img => {
+        img.addEventListener('click', function () {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = this.src;
+            document.body.classList.add('lightbox-open');
+        });
+    });
+
+    closeLightbox.addEventListener('click', function () {
+        lightbox.style.display = 'none';
+        document.body.classList.remove('lightbox-open');
+    });
+
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+            document.body.classList.remove('lightbox-open');
+        }
+    });
+</script>
+
 </body>
 </html>

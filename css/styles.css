@@ -429,3 +429,6 @@ body.lightbox-open {
     filter: blur(5px);
 }
 
+#cvDl:hover{
+    text-decoration: underline;
+}
