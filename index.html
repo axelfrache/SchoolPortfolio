@@ -183,7 +183,6 @@
 
             colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
             colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-
         }
     }
 
@@ -193,33 +192,6 @@
     const lightboxImg = document.getElementById('lightboxImg');
     const closeLightbox = document.getElementById('closeLightbox');
 
-    document.querySelectorAll('.screen img').forEach(img => {
-        img.addEventListener('click', function () {
-            lightbox.style.display = 'flex';
-            lightboxImg.src = this.src;
-            document.body.classList.add('lightbox-open');
-        });
-    });
-
-    document.querySelectorAll('.screenAvenue img').forEach(img => {
-        img.addEventListener('click', function () {
-            lightbox.style.display = 'flex';
-            lightboxImg.src = this.src;
-            document.body.classList.add('lightbox-open');
-        });
-    });
-
-    closeLightbox.addEventListener('click', function () {
-        lightbox.style.display = 'none';
-        document.body.classList.remove('lightbox-open');
-    });
-
-    lightbox.addEventListener('click', function (e) {
-        if (e.target === lightbox) {
-            lightbox.style.display = 'none';
-            document.body.classList.remove('lightbox-open');
-        }
-    });
 </script>
 </body>
 </html>
