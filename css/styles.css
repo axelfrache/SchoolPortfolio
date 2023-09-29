@@ -115,12 +115,12 @@ input:checked ~ .slider:before {
 .slider.round:before {
     content: "";
     position: absolute;
-    top: 4px; /* Ajusté en fonction de la nouvelle taille */
-    left: 4px; /* Ajusté en fonction de la nouvelle taille */
-    width: 26px; /* Ajusté en fonction de la nouvelle taille */
-    height: 26px; /* Ajusté en fonction de la nouvelle taille */
+    top: 4px;
+    left: 4px;
+    width: 26px; 
+    height: 26px;
     border-radius: 50%;
-    box-shadow: inset 10px -1px 0px 0px var(--light); /* Ajusté en fonction de la nouvelle taille */
+    box-shadow: inset 10px -1px 0px 0px var(--light);
     background-color: var(--dark);
     transition: 0.3s;
 
@@ -134,28 +134,28 @@ input:checked ~ .slider:before {
 
 /* Couleur de fond et couleur du texte de la section contact en mode sombre */
 .dark-mode #contact {
-    background-color: #333; /* Ou toute autre couleur sombre de votre choix */
-    color: #fff; /* Ou toute autre couleur claire de votre choix */
+    background-color: #333; 
+    color: #fff;
 }
 
 /* Couleur de fond et couleur du texte des champs de saisie et de la zone de texte en mode sombre */
 .dark-mode #contact input,
 
 .dark-mode #contact textarea {
-    background-color: #555; /* Ou toute autre couleur sombre de votre choix */
-    color: #fff; /* Ou toute autre couleur claire de votre choix */
+    background-color: #555; 
+    color: #fff; 
     border: 1px solid #777; /* Changer la couleur de la bordure si nécessaire */
 }
 
 /* Couleur de fond du bouton d'envoi en mode sombre */
 .dark-mode #contact button {
-    background-color: #555; /* Ou toute autre couleur sombre de votre choix */
-    color: #fff; /* Ou toute autre couleur claire de votre choix */
+    background-color: #555; 
+    color: #fff; 
 }
 
 /* Couleur de fond du bouton d'envoi en mode sombre lorsqu'il est survolé */
 .dark-mode #contact button:hover {
-    background-color: #777; /* Ou toute autre couleur sombre de votre choix */
+    background-color: #777; 
 }
 
 .dark-mode nav {

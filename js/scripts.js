@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const y = event.clientY;
             trail.style.transform = `translate(${x - 10}px, ${y - 10}px)`;
         });
+
+
     }
 
     // Pour la validation des formulaires
