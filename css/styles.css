@@ -6,6 +6,7 @@
     --danger-color: #ea4335; /* Rouge Google */
     --background: #ffffff; /* Blanc */
     --text-color: #333;
+
 }
 
 /* Styles généraux */
@@ -48,6 +49,113 @@ nav a {
 nav a:hover {
     color: var(--secondary-color);
 }
+
+/* Style du switch toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Arrondissement des bords du slider */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Couleurs pour le mode dark */
+:root {
+    --primary-bg: #fff;
+    --primary-txt: #000;
+}
+
+/* Couleur de fond et couleur du texte de la section contact en mode sombre */
+.dark-mode #contact {
+    background-color: #333; /* Ou toute autre couleur sombre de votre choix */
+    color: #fff; /* Ou toute autre couleur claire de votre choix */
+}
+
+/* Couleur de fond et couleur du texte des champs de saisie et de la zone de texte en mode sombre */
+.dark-mode #contact input,
+
+.dark-mode #contact textarea {
+    background-color: #555; /* Ou toute autre couleur sombre de votre choix */
+    color: #fff; /* Ou toute autre couleur claire de votre choix */
+    border: 1px solid #777; /* Changer la couleur de la bordure si nécessaire */
+}
+
+/* Couleur de fond du bouton d'envoi en mode sombre */
+.dark-mode #contact button {
+    background-color: #555; /* Ou toute autre couleur sombre de votre choix */
+    color: #fff; /* Ou toute autre couleur claire de votre choix */
+}
+
+/* Couleur de fond du bouton d'envoi en mode sombre lorsqu'il est survolé */
+.dark-mode #contact button:hover {
+    background-color: #777; /* Ou toute autre couleur sombre de votre choix */
+}
+
+.dark-mode nav {
+    background-color: #2E2E2E; /* couleur de fond de la navbar en mode sombre */
+    color: #fff; /* couleur du texte dans la navbar en mode sombre */
+}
+
+.dark-mode .project-card {
+    background-color: #444;
+    color: #ddd;
+}
+
+
+body.dark-mode {
+    --primary-bg: #333;
+    --primary-txt: #fff;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-txt);
+}
+
 
 /* Sections */
 section {
@@ -338,7 +446,6 @@ footer {
     opacity: 1;
 }
 
-/* Modifier la largeur du bouton "Envoyer" */
 #contact #sendBtn{
     background-color: var(--primary-color);
     color: var(--background);
