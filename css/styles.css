@@ -168,7 +168,6 @@ input:checked ~ .slider:before {
     color: #ddd;
 }
 
-
 body.dark-mode {
     --primary-bg: #333;
     --primary-txt: #fff;
