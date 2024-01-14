@@ -561,3 +561,7 @@ body.lightbox-open {
 #cvDl:hover{
     text-decoration: underline;
 }
+
+#apprentissages a:hover{
+    text-decoration: underline;
+}
